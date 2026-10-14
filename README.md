@@ -60,3 +60,5 @@ python -m unittest test_flows -v
 ```
 
 To add another workflow, add it to the Excel file, add a function to `actions.py`, connect its ID in `registry.py`, and add input fields to `app.py` if needed. Gemini reads the workflow definitions from Excel when choosing.
+
+![AI Agent Dashboard](dashboard.png)
