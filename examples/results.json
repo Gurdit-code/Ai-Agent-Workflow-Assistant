@@ -1,0 +1,149 @@
+{
+  "WF001": [
+    {
+      "product": "T-Shirt",
+      "current_stock": 5.0,
+      "minimum_stock": 10.0,
+      "reorder_quantity": 15.0
+    },
+    {
+      "product": "Hoodie",
+      "current_stock": 3.0,
+      "minimum_stock": 10.0,
+      "reorder_quantity": 17.0
+    }
+  ],
+  "WF002": {
+    "validated_products": [
+      {
+        "sku": "P001",
+        "internal_price": 500.0,
+        "vendor_price": 550.0,
+        "difference_percent": 10.0,
+        "flagged": false
+      },
+      {
+        "sku": "P002",
+        "internal_price": 900.0,
+        "vendor_price": 1000.0,
+        "difference_percent": 11.11,
+        "flagged": true
+      },
+      {
+        "sku": "P003",
+        "internal_price": 700.0,
+        "vendor_price": 650.0,
+        "difference_percent": 7.14,
+        "flagged": false
+      }
+    ],
+    "exceptions": [
+      {
+        "sku": "P002",
+        "internal_price": 900.0,
+        "vendor_price": 1000.0,
+        "difference_percent": 11.11,
+        "flagged": true
+      }
+    ],
+    "unmatched_skus": []
+  },
+  "WF003": {
+    "source_file": "vendor.csv",
+    "total_rows": 4,
+    "valid_rows": 3,
+    "invalid_rows": 1,
+    "cleaned_file": "outputs/cleaned_vendor.csv",
+    "invalid_rows_file": "outputs/invalid_vendor_rows.csv"
+  },
+  "WF004": {
+    "product_name": "Trail Shirt",
+    "long_description": "Trail Shirt, made from cotton, designed for hikers.",
+    "short_description": "Trail Shirt",
+    "seo_title": "Trail Shirt",
+    "meta_description": "Trail Shirt, made from cotton, designed for hikers.",
+    "missing_attributes": [
+      "category",
+      "color"
+    ],
+    "note": "Template-based output; only supplied attributes were used."
+  },
+  "WF005": {
+    "order_id": "ORD-1001",
+    "status": "Shipped",
+    "items": [
+      "T-Shirt"
+    ],
+    "shipment": "In transit",
+    "tracking": "TRK-1001"
+  },
+  "WF006": {
+    "exact_duplicates": [
+      {
+        "type": "exact_sku_duplicate",
+        "sku": "p001",
+        "first_product": "Classic T-Shirt",
+        "duplicate_product": "Classic T-Shirt",
+        "confidence": 1.0
+      }
+    ],
+    "possible_duplicates": []
+  },
+  "WF007": {
+    "product": "Shoes",
+    "audience": "Runners",
+    "goal": "Launch sale",
+    "message": "Promote Shoes to Runners to support Launch sale.",
+    "channels": [
+      "Email",
+      "Website",
+      "Social media"
+    ],
+    "dates": "May",
+    "checklist": [
+      "Confirm offer and dates",
+      "Prepare content",
+      "Review links"
+    ]
+  },
+  "WF008": [
+    {
+      "keyword": "buy shoes",
+      "intent": "Transactional",
+      "target_page": "Product page",
+      "priority": "High"
+    },
+    {
+      "keyword": "best T-shirts",
+      "intent": "Commercial",
+      "target_page": "Category page",
+      "priority": "Medium"
+    },
+    {
+      "keyword": "how to wash hoodies",
+      "intent": "Informational",
+      "target_page": "Blog or guide",
+      "priority": "Low"
+    }
+  ],
+  "WF009": {
+    "assigned_employee": "Aman",
+    "required_skill": "python",
+    "current_tasks": 2.0,
+    "task": "Build a report",
+    "priority": "High",
+    "deadline": "Friday"
+  },
+  "WF010": {
+    "total_runs": 3,
+    "failed_runs": 1,
+    "failure_rate_percent": 33.33,
+    "average_seconds": 3.33,
+    "frequent_errors": {
+      "Vendor data mismatch": 1
+    },
+    "recommendations": [
+      "Investigate the failure rate."
+    ]
+  }
+}

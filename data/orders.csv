@@ -1,0 +1,2 @@
+order_id,email,status,items,shipment,tracking
+ORD-1001,customer@example.com,Shipped,T-Shirt,In transit,TRK-1001

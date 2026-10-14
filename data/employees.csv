@@ -1,0 +1,4 @@
+name,skills,tasks,available,max_tasks
+Aman,python,2,true,5
+Raj,sql,1,true,4
+Simran,python|sql,3,true,5
